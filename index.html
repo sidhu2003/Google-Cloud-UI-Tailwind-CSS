@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+      tailwind.config = {
+        content: ['./*.html'],
+  theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    extend: {
+      colors: {
+        brightRed: 'hsl(12, 88%, 59%)',
+        brightRedLight: 'hsl(12, 88%, 69%)',
+        brightRedSupLight: 'hsl(12, 88%, 95%)',
+        darkBlue: 'hsl(228, 39%, 23%)',
+        darkGrayishBlue: 'hsl(227, 12%, 61%)',
+        veryDarkBlue: 'hsl(233, 12%, 13%)',
+        veryPaleRed: 'hsl(13, 100%, 96%)',
+        veryLightGray: 'hsl(0, 0%, 98%)',
+      },
+    },
+  },
+  plugins: [],
+}
+    </script>
+    <script src="script.js" defer></script>
+    <title>Google Cloud</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="relative container mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="img/google_cloud-icon.svg" alt="" width="200px"/>
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 md:flex">
+        <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+        <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+      </div>
+      <!-- Button -->
+      <a
+        href="#"
+        class="hidden p-3 px-6 pt-2 text-white bg-darkBlue rounded-full baseline hover:bg-veryDarkBlue md:block"
+        >Get Started</a
+      >
+
+      <!-- Hamburger Icon -->
+      <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div
+        id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+      >
+        <a href="#">Pricing</a>
+        <a href="#">Product</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 ">
+            <!-- Left Side -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+                    The best cloud platform for your business
+                </h1>
+                <p class="max-w-sm text-center md:text-left text-darkGrayishBlue">
+                    Google Cloud is a cloud computing service that offers reliable, scalable, and inexpensive cloud computing services. </p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="#" class="p-3 px-6 pt-2 text-white bg-darkBlue rounded-full baseline">
+                            Get Started</a>
+                    </div>     
+            </div>    
+                <!-- Right Side -->
+                <div class="md:w-1/2">
+                    <img src="img/illustration-intro.svg" alt="Hero Image">
+                </div>
+        </div>
+    </div>
+    </section>
+
+     <!-- Features Section -->
+     <section id="features">
+        <!-- Flex container -->
+        <div
+          class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+        >
+          <!-- What's Different -->
+          <div class="flex flex-col space-y-12 md:w-1/2">
+            <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+              What's different about Manage?
+            </h2>
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+              Google Cloud provides all the Tools your team needs, without the
+              complexity. Our Cloud can handled very Easily and super simple.
+            </p>
+          </div>
+  
+          <!-- Numbered List -->
+          <div class="flex flex-col space-y-8 md:w-1/2">
+            <!-- List Item 1 -->
+            <div
+              class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+            >
+              <!-- Heading -->
+              <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="px-4 py-2 text-white rounded-full md:py-1 bg-darkBlue"
+                  >
+                    01
+                  </div>
+                  <h3 class="text-base font-bold md:mb-4 md:hidden">
+                    Run and Build Your Apps Anywhere
+                  </h3>
+                </div>
+              </div>
+  
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                    Run and Build Your Apps Anywhere
+                </h3>
+                <p class="text-darkGrayishBlue">
+                    Avoid vendor lock-in and speed up development with Google Cloud’s commitment to open source, hybrid, and multicloud.
+                </p>
+              </div>
+            </div>
+  
+            <!-- List Item 2 -->
+            <div
+              class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+            >
+              <!-- Heading -->
+              <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="px-4 py-2 text-white rounded-full md:py-1 bg-darkBlue"
+                  >
+                    02
+                  </div>
+                  <h3 class="text-base font-bold md:mb-4 md:hidden">
+                    Protects what Important to You
+                  </h3>
+                </div>
+              </div>
+  
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                  Protects What Important to You
+                </h3>
+                <p class="text-darkGrayishBlue">
+                    Help defend your data and apps against threats and fraudulent activity with the same security technology Google uses.
+                </p>
+              </div>
+            </div>
+  
+            <!-- List Item 3 -->
+            <div
+              class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+            >
+              <!-- Heading -->
+              <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="px-4 py-2 text-white rounded-full md:py-1 bg-darkBlue"
+                  >
+                    03
+                  </div>
+                  <h3 class="text-base font-bold md:mb-4 md:hidden">
+                    Everything you need in one place
+                  </h3>
+                </div>
+              </div>
+  
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                  Everything you need in one place
+                </h3>
+                <p class="text-darkGrayishBlue">
+                    Give anyone on your team access to business insights with advanced machine learning and analytics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Testimonials -->
+    <section id="testimonials">
+        <!-- Container to heading and testm blocks -->
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+          <!-- Heading -->
+          <h2 class="text-4xl font-bold text-center">
+            What's Different About Manage?
+          </h2>
+          <!-- Testimonials Container -->
+          <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+            <!-- Testimonial 1 -->
+            <div
+              class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
+            >
+              <img src="img/avatar-anisha.png" class="w-16 -mt-14" alt="" />
+              <h5 class="text-lg font-bold">Anisha Li</h5>
+              <p class="text-sm text-darkGrayishBlue">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+  
+            <!-- Testimonial 2 -->
+            <div
+              class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+            >
+              <img src="img/avatar-ali.png" class="w-16 -mt-14" alt="" />
+              <h5 class="text-lg font-bold">Ali Bravo</h5>
+              <p class="text-sm text-darkGrayishBlue">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+  
+            <!-- Testimonial 3 -->
+            <div
+              class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+            >
+              <img src="img/avatar-richard.png" class="w-16 -mt-14" alt="" />
+              <h5 class="text-lg font-bold">Richard Watts</h5>
+              <p class="text-sm text-darkGrayishBlue">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="my-16">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-darkBlue rounded-full baseline hover:bg-veryDarkBlue"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
+         <!-- CTA Section -->
+    <section id="cta" class="bg-darkBlue">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+        >
+          <!-- Heading -->
+          <h2
+            class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left"
+          >
+            Simplify how your team works today
+          </h2>
+          <!-- Button -->
+          <div>
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-darkGrayishBlue bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
+  
+      <!-- Footer -->
+      <footer class="bg-veryDarkBlue">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+        >
+          <!-- Logo and social links container -->
+          <div
+            class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+          >
+            <div class="mx-auto my-6 text-center text-white md:hidden">
+              Copyright &copy; 2022, All Rights Reserved
+            </div>
+            <!-- Logo -->
+            <div>
+              <img src="img/logo-white.svg" class="h-8" alt="" />
+            </div>
+            <!-- Social Links Container -->
+            <div class="flex justify-center space-x-4">
+              <!-- Link 1 -->
+              <a href="#">
+                <img src="img/icon-facebook.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 2 -->
+              <a href="#">
+                <img src="img/icon-youtube.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 3 -->
+              <a href="#">
+                <img src="img/icon-twitter.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 4 -->
+              <a href="#">
+                <img src="img/icon-pinterest.svg" alt="" class="h-8" />
+              </a>
+              <!-- Link 5 -->
+              <a href="#">
+                <img src="img/icon-instagram.svg" alt="" class="h-8" />
+              </a>
+            </div>
+          </div>
+          <!-- List Container -->
+          <div class="flex justify-around space-x-32">
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+              <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+              <a href="#" class="hover:text-darkGrayishBlue">Products</a>
+              <a href="#" class="hover:text-darkGrayishBlue">About</a>
+            </div>
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+              <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+              <a href="#" class="hover:text-darkGrayishBlue">Privacy Policy</a>
+            </div>
+          </div>
+  
+          <!-- Input Container -->
+          <div class="flex flex-col justify-between">
+            <form>
+              <div class="flex space-x-3">
+                <input
+                  type="text"
+                  class="flex-1 px-4 rounded-full focus:outline-none"
+                  placeholder="Updated in your inbox"
+                />
+                <button
+                  class="px-6 py-2 text-white rounded-full bg-darkBlue hover:bg-veryDarkBlue focus:outline-none"
+                >
+                  Go
+                </button>
+              </div>
+            </form>
+            <div class="hidden text-white md:block">
+              Copyright &copy; 2022, All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="js/script.js"></script>
+    </body>
+  </html>
+</body>
+</html>
