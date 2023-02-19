@@ -1,8 +1,8 @@
-<h1>Google Cloud UX Idea Using HTML,CSS,tailwind CSS and basic JS </h1>
+<h1>Google Cloud UX Idea Using HTML,CSS,tailwind CSS and basic JS 🖥️ </h1>
 
 <img src = "img/google_cloud-icon.svg">
 
-<h2>Technolgoies Used </h2>
+<h2>Technolgoies Used 👾</h2>
 
 
 <li>
@@ -13,6 +13,6 @@
  </li>
 </td>
 
-  <h2>Link :</h2> 
+  <h2>Link 👇</h2> 
   <a href = "https://google-cloud-tailwind.vercel.app">Click Here</a>
   
